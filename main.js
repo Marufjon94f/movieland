@@ -7,7 +7,7 @@ let page = 1;
 
 
 function getData (page){
-    fetch(`http://www.omdbapi.com/?apikey=9fcd4d84&i=tt3896198&s=home&page=${page}`)
+    fetch(`https://www.omdbapi.com/?apikey=9fcd4d84&i=tt3896198&s=home&page=${page}`)
 .then((response)=>response.json())
 .then((data)=> {
 
