@@ -7,7 +7,7 @@ let page = 1;
 
 
 function getData (page){
-    fetch(`https://www.omdbapi.com/?apikey=9fcd4d84&i=tt3896198&s=home&page=${page}`)
+    fetch(`https://www.omdbapi.com/?apikey=9fcd4d84&s=home&page=${page}`)
 .then((response)=>response.json())
 .then((data)=> {
 
@@ -45,20 +45,21 @@ function renderFilms (object){
     newLi.appendChild(newP1);
 
 }
-elFilmNext.addEventListener("cilck", nextPage);
+elFilmNext.addEventListener("click", nextPage);
 function nextPage(){
-    elFilmsList.innerHTML = null;
+    elFilmsList.innerHTML = "";
     page = page + 1;
+    console.log(page);
     getData(page)
 };
 
 getData(page);
 
-elPrev.addEventListener("click", prevPage)
+elFilmPrev.addEventListener("click", prevPage);
 function prevPage() {
   elFilmsList.innerHTML = "";
   page = page - 1;
+  console.log(page);
   getData(page);
 };  
 
-getData(page);
