@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(243, 240, 240);
+}
+.js-film-list{
+    display: flex;
+        flex-wrap: wrap;
+}
+.main{
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.h1{
+    text-align: center;
+    color: cadetblue;
+}
+.loader{
+    text-align: center;
+    margin-top: 400px;
+   
+}
+
+.js-pic{
+    cursor: pointer;
+    object-fit: contain;
+    width: 300px;
+    height: 250px;
+}
+
+.js-item{
+  
+    list-style: none;
+    text-align: center;
+}
+.js-item:hover{
+    transform: scale(1.1);
+    transition: 1s all;
+   }
+   .btn-box{
+       text-align: center;
+   }
